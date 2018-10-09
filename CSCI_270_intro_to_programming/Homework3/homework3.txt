@@ -1,0 +1,67 @@
+CASEY SORRELLS
+----------------------------------------------------------------------------
+
+1) one<br>
+   two<br>
+   three<br>
+   
+2) <b>bold</b>
+
+3) <i>italic</i>
+
+4) <u>underline</u>
+
+5) <b><i>bold italic</i></b>
+
+6) <font face="courier">courier</font>
+
+7) <font size="7">font size 7</font>
+
+8) <font color="red">red</font>
+
+9) <font face="courier" color="red" size="7">
+      How to make a Peanut Butter and Jelly Sandwich!
+   </font>
+   
+10) one&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;two
+
+11) <HTML>
+       <HEAD>
+          <TITLE>Empty Web Page</TITLE>
+       </HEAD>
+       <BODY>
+       </BODY>
+    </HTML>
+
+12) <H1>heading 1</H1>
+
+13) <P>my first paragraph</P>
+    <P>my second paragraph</P>
+    <P>my third paragraph</P>
+
+
+
+
+
+14) <ul>
+      <li>bullet 1
+      <li>bullet 2
+      <li>bullet 3
+    </ul>
+
+15) <TABLE>
+      <tr>
+        <td>A1</td> <td>B1</td> <td>C1</td>
+      </tr>
+      <tr>
+        <td>A2</td> <td>B2</td> <td>C2</td>
+      </tr>
+      <tr>
+        <td>A3</td> <td>B3</td> <td>C3</td>
+      </tr>
+    </TABLE>
+
+16) <image src="myPhoto.jpg">
+
+17) <a href="http://www.mjc.edu">MJC</a>
+

@@ -1,0 +1,4 @@
+﻿1>------ Build started: Project: CSCI271lab3, Configuration: Debug Win32 ------
+1>CSCI271_Lab3.cpp
+1>CSCI271lab3.vcxproj -> Y:\Google Drive\Programming 1\Labs\Lab3\CSCI271lab3\Debug\CSCI271lab3.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
