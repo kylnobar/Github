@@ -1,8 +1,7 @@
 #pragma once
 #include <string>
 
-/*
-	UML type Diagram:
+/*	UML type Diagram:
 .---------------------------------------.
 |	-int currentDay						|
 |	-string dayOfWeek[0-6]				|
@@ -11,8 +10,7 @@
 |	+void dayDec()						|
 |	+void setDay()						|
 |	+string getDay()					|
-|---------------------------------------|
-*/
+|--------------------------------------*/
 
 class dayType {
 	int currentDay;
