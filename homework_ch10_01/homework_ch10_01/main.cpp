@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "dayType.h"
 
 void drawMenu();
@@ -28,6 +29,12 @@ int main()
 	Add the appropriate constructors and call the methods to test the class.
 	*/
 	drawMenu();
+
+	dayType gayDay;
+	gayDay.setDay(1);
+	gayDay.updateDay(true, 35);
+	std::cout << "\n\n" << gayDay.getDay() << "\n\n";
+
 	system("pause");
 	return 0;
 }

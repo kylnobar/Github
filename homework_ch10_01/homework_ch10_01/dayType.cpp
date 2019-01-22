@@ -1,4 +1,5 @@
 #include "dayType.h"
+#include <iostream>
 #include <string>
 
 
@@ -42,7 +43,19 @@ void dayType::dayDec()
 	}
 }
 
-void dayType::updateDay()
+void dayType::updateDay(bool incriment, int num_of_days)
 {
+	if (incriment == true) {
+		for (int i = 0; i <= num_of_days; i++)
+			dayInc();
+	} else {
+		for (int i = 0; i <= num_of_days; i++)
+			dayDec();
+	}
+}
 
+void dayType::printDay()
+{
+	
+	
 }
