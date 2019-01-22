@@ -30,9 +30,17 @@ int main()
 	*/
 	drawMenu();
 
+	int whatday = 0;
+	int howmany = 0;
+
+	std::cout << "\tWHAT DAY OF THE WEEK IS IT?\n\tENTER 0-6 AND PRESS ENTER: ";
+	std::cin >> whatday;
+	std::cout << "\tHOW MANY DAYS DO YOU WISH TO COUNT? ENTER POSITIVE INTEGERS ONLY: ";
+	std::cin >> howmany;
+
 	dayType gayDay;
-	gayDay.setDay(1);
-	gayDay.updateDay(true, 35);
+	gayDay.setDay(whatday);
+	gayDay.updateDay(true, howmany);
 	std::cout << "\n\n" << gayDay.getDay() << "\n\n";
 
 	system("pause");
@@ -43,6 +51,5 @@ void drawMenu()
 {
 	std::cout << "\t\n\n<====================< CASEY'S AWESOME SAUCE DAY OF THE WEEK CALCULATOR! >===========================\n\n\n\n"
 		<< "\t\tPLEASE SELECT THE CURRENT DAY OF THE WEEK:\n\n"
-		<< "\t\t0 - SUNDAY\n\n\t\t1 - MONDAY\n\n\t\t2 - TUESDAY\n\n\t\t3 - WEDNESDAY\n\n\t\t4 - THURSDAY\n\n\t\t5 - FRIDAY\n\n\t\t6 - SATURDAY\n\n\n"
-		<< "\tWHAT DAY OF THE WEEK IS IT?\n\tENTER 0-6 AND PRESS ENTER: ";
+		<< "\t\t0 - SUNDAY\n\n\t\t1 - MONDAY\n\n\t\t2 - TUESDAY\n\n\t\t3 - WEDNESDAY\n\n\t\t4 - THURSDAY\n\n\t\t5 - FRIDAY\n\n\t\t6 - SATURDAY\n\n\n";
 }

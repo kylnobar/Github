@@ -12,7 +12,7 @@ dayType::dayType() {				// Constructor
 	dayOfWeek[5] = "Friday";
 	dayOfWeek[6] = "Saturday";
 
-	currentDay = 0;
+	currentDay = 1;
 }
 
 void dayType::setDay(int day)
@@ -27,29 +27,31 @@ std::string dayType::getDay()
 
 void dayType::dayInc()
 {
-	if (currentDay > 5) {			// make sure currentDay starts over at zero when 6 is reached.
-		currentDay = 0;
-	} else {
+	if (currentDay < 6) {			// make sure currentDay starts over at zero when 6 is reached.
 		currentDay++;
+	} else {
+		currentDay = 0;
 	}
+		std::cout << "\n" << dayOfWeek[currentDay] << "\n";
 }
 
 void dayType::dayDec()
 {
-	if (currentDay < 1) {			// make sure currentDay doesn't go below zero.
-		currentDay = 6;
-	} else {
+	if (currentDay > 0) {			// make sure currentDay doesn't go below zero.
 		currentDay--;
+	} else {
+		currentDay = 6;
 	}
+		std::cout << "\n" << dayOfWeek[currentDay] << "\n";
 }
 
 void dayType::updateDay(bool incriment, int num_of_days)
 {
 	if (incriment == true) {
-		for (int i = 0; i <= num_of_days; i++)
+		for (int i = 0; i < num_of_days; i++)
 			dayInc();
 	} else {
-		for (int i = 0; i <= num_of_days; i++)
+		for (int i = 0; i < num_of_days; i++)
 			dayDec();
 	}
 }
