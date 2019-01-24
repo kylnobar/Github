@@ -6,23 +6,26 @@
 		dayType
 .-------------------------------.
 |	-int currentDay				|
+|	-int numOfCycles			|
 |	-string dayOfWeek[0-6]		|
 |-------------------------------|
 |	-void dayInc()				|
 |	-void dayDec()				|
+|	-void printDay()			|
 |	+void setDay()				|
 |	+string getDay()			|
 |	+void updateDay()			|
+|	+dayType()					|
 |------------------------------*/
 
 class dayType {
 	int currentDay;
 	int numOfCycles;
+	std::string dayOfWeek[7];
 	void dayInc();
 	void dayDec();
 	void printDay();
 public:
-	std::string dayOfWeek[7];
 	dayType();
 	void setDay(int day);
 	std::string getDay();

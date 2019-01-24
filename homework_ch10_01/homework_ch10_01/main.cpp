@@ -2,6 +2,24 @@
 #include <string>
 #include "dayType.h"
 
+/*	UML type Diagram:
+
+		dayType
+.-------------------------------.
+|	-int currentDay				|
+|	-int numOfCycles			|
+|	-string dayOfWeek[0-6]		|
+|-------------------------------|
+|	-void dayInc()				|
+|	-void dayDec()				|
+|	-void printDay()			|
+|	+void setDay()				|
+|	+string getDay()			|
+|	+void updateDay()			|
+|	+dayType()					|
+|------------------------------*/
+
+
 /*FUNCTION DECLARATIONS*/
 void drawMenu(int menu, std::string curDayDisplay);
 bool askToQuit();
@@ -12,26 +30,7 @@ int main()
 {
 	// set current day of the week to whatever it might be
 		// create variable for this, should go in the constructor of dayType class
-	/*
-	Design and implement a class dayType that implements the day of the week in a program. 
-	The class dayType should store the day, such as Sun for Sunday. 
-	The program should be able to perform the following operations on an object of type dayType:
 
-	Set the day.
-
-	Print the day.
-
-	Return the day.
-
-	Return the next day.
-
-	Return the previous day.
-
-	Calculate and return the day by adding certain days to the current day. For example, if the current day is Monday and we add 4 days, 
-	the day to be returned is Friday. Similarly, if today is Tuesday and we add 13 days, the day to be returned is Monday.
-
-	Add the appropriate constructors and call the methods to test the class.
-	*/
 	do {
 		calculateDayOfWeek();
 	} while (!askToQuit());
@@ -48,14 +47,14 @@ void calculateDayOfWeek() {
 	calcDay.setDay(tempDay);
 
 	drawMenu(1, calcDay.getDay()); 
-	std::cout << "\n\tCHOOSE AN OPTION AND PRESS ENTER: ";
+	std::cout << "\n\t\tCHOOSE AN OPTION AND PRESS ENTER: ";
 	std::cin >> tempDay;
 	calcDay.setDay(tempDay);
 	std::cout << "CURRENT DAY SET: " << calcDay.getDay() << ".\n\n";
 
 	drawMenu(2, calcDay.getDay());
 	std::cin >> tempDirection;
-	std::cout << "\tHOW MANY DAYS DO YOU WISH TO COUNT? ENTER POSITIVE INTEGERS ONLY: ";
+	std::cout << "\t\tHOW MANY DAYS DO YOU WISH TO COUNT? ENTER POSITIVE INTEGERS ONLY: ";
 	std::cin >> tempNumOfDays;
 
 	calcDay.updateDay(tempDirection, tempNumOfDays);
@@ -91,14 +90,14 @@ void drawMenu(int menu, std::string curDayDisplay)
 	system("cls");
 	if (menu == 1) {
 	std::cout << "\n\n\t<======================< CASEY'S AWESOME SAUCE DAY OF THE WEEK CALCULATOR! >======================>\n"
-		<< "\t\t\t\tCURRENT DAY: " << curDayDisplay << "\n\n\n"
+		<< "\n\t\t\t\t\t\tCURRENT DAY: " << curDayDisplay << "\n\n\n"
 		<< "\t\tPLEASE SELECT THE CURRENT DAY OF THE WEEK:\n\n"
 		<< "\t\t0 - SUNDAY\n\n\t\t1 - MONDAY\n\n\t\t2 - TUESDAY\n\n\t\t3 - WEDNESDAY\n\n\t\t4 - THURSDAY\n\n\t\t5 - FRIDAY\n\n\t\t6 - SATURDAY\n\n\n";
 	}
 
 	else if (menu == 2) {
 	std::cout << "\n\n\t<======================< CASEY'S AWESOME SAUCE DAY OF THE WEEK CALCULATOR! >======================>\n"
-		<< "\t\t\t\tCURRENT DAY: " << curDayDisplay << "\n\n\n"
+		<< "\n\t\t\t\t\t\tCURRENT DAY: " << curDayDisplay << "\n\n\n"
 		<< "\t\tCALCULATE INTO THE FUTURE OR THE PAST?\n\n"
 		<< "\t\t0 - PAST\n\n\t\t1 - FUTURE\n\n"
 		<< "\t\tENTER 0 OR 1: ";

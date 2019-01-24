@@ -2,6 +2,24 @@
 #include <iostream>
 #include <string>
 
+/*	UML type Diagram:
+
+		dayType
+.-------------------------------.
+|	-int currentDay				|
+|	-int numOfCycles			|
+|	-string dayOfWeek[0-6]		|
+|-------------------------------|
+|	-void dayInc()				|
+|	-void dayDec()				|
+|	-void printDay()			|
+|	+void setDay()				|
+|	+string getDay()			|
+|	+void updateDay()			|
+|	+dayType()					|
+|------------------------------*/
+
+
 
 dayType::dayType() {				// Constructor
 	dayOfWeek[0] = "Sunday";
@@ -57,7 +75,7 @@ void dayType::updateDay(int direction, int num_of_days)
 		for (int i = 0; i < num_of_days; i++)
 			dayDec();
 	}
-	std::cin.ignore(INT_MAX, '\n');
+	std::cin.ignore(INT_MAX, '\n');  // clear istream buffer so getline function won't be skipped when running
 }
 
 void dayType::printDay()
