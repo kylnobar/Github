@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string>
 
-int numberOfCycles = 1;
 
 dayType::dayType() {				// Constructor
 	dayOfWeek[0] = "Sunday";
@@ -14,6 +13,7 @@ dayType::dayType() {				// Constructor
 	dayOfWeek[6] = "Saturday";
 
 	currentDay = 1;
+	numOfCycles = 1;
 }
 
 void dayType::setDay(int day)
@@ -33,8 +33,8 @@ void dayType::dayInc()
 	} else {
 		currentDay = 0;
 	}
-		std::cout << numberOfCycles << ". " << dayOfWeek[currentDay] << "\n";
-		numberOfCycles++;
+
+	printDay();
 }
 
 void dayType::dayDec()
@@ -44,23 +44,25 @@ void dayType::dayDec()
 	} else {
 		currentDay = 6;
 	}
-		std::cout << numberOfCycles << ". " << dayOfWeek[currentDay] << "\n";
-		numberOfCycles++;
+
+	printDay();
 }
 
-void dayType::updateDay(bool incriment, int num_of_days)
+void dayType::updateDay(int direction, int num_of_days)
 {
-	if (incriment == true) {
+	if (direction == 1) {
 		for (int i = 0; i < num_of_days; i++)
 			dayInc();
 	} else {
 		for (int i = 0; i < num_of_days; i++)
 			dayDec();
 	}
+	std::cin.ignore(INT_MAX, '\n');
 }
 
 void dayType::printDay()
 {
-	
+	std::cout << "\t" << numOfCycles << ". " << dayOfWeek[currentDay] << "\n";
+	numOfCycles++;
 	
 }

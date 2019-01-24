@@ -17,16 +17,16 @@
 
 class dayType {
 	int currentDay;
-	std::string dayOfWeek[7];
-	//dayType();
+	int numOfCycles;
 	void dayInc();
 	void dayDec();
 	void printDay();
 public:
+	std::string dayOfWeek[7];
 	dayType();
 	void setDay(int day);
 	std::string getDay();
-	void updateDay(bool incriment, int num_of_days);
+	void updateDay(int direction, int num_of_days);
 };
 
 
