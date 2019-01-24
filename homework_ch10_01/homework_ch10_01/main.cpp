@@ -49,7 +49,7 @@
 void drawMenu(int menu, std::string curDayDisplay);
 bool askToQuit();
 void calculateDayOfWeek();
-
+void printResult(int tempNumOfDays, int tempDirection, std::string currentDayName);
 
 int main() 
 {
@@ -60,6 +60,7 @@ int main()
 	return 0;
 }
 
+
 void calculateDayOfWeek() {
 	int tempDay = 0;
 	int tempNumOfDays = 0;
@@ -68,19 +69,25 @@ void calculateDayOfWeek() {
 	dayType calcDay;
 	calcDay.setDay(tempDay);
 
-	drawMenu(1, calcDay.getDay()); 
+	drawMenu(1, calcDay.getDay()); // day selection menu
 	std::cout << "\n\t\tCHOOSE AN OPTION AND PRESS ENTER: ";
 	std::cin >> tempDay;
 	calcDay.setDay(tempDay);
+
 	std::cout << "CURRENT DAY SET: " << calcDay.getDay() << ".\n\n";
 
-	drawMenu(2, calcDay.getDay());
+	drawMenu(2, calcDay.getDay()); // calculation direction selection menu(future or past)
 	std::cin >> tempDirection;
 	std::cout << "\t\tHOW MANY DAYS DO YOU WISH TO COUNT? ENTER POSITIVE INTEGERS ONLY: ";
 	std::cin >> tempNumOfDays;
 
 	calcDay.updateDay(tempDirection, tempNumOfDays);
 
+	printResult(tempNumOfDays, tempDirection, calcDay.getDay());
+}
+
+
+void printResult(int tempNumOfDays, int tempDirection, std::string currentDayName) {
 	std::string tempDirString = "";
 	std::string tempPlurality = "";
 
@@ -92,9 +99,9 @@ void calculateDayOfWeek() {
 	if (tempDirection == 0)
 		tempDirString = "INTO THE PAST";
 
-	std::cout << "\n\n\t" << tempNumOfDays << tempPlurality << "FROM CURRENT DAY " << tempDirString << " RESULTS IN A " << calcDay.getDay();
-
+	std::cout << "\n\n\t" << tempNumOfDays << tempPlurality << "FROM CURRENT DAY " << tempDirString << " RESULTS IN A " << currentDayName;
 }
+
 
 bool askToQuit() {
 
@@ -104,6 +111,7 @@ bool askToQuit() {
 	return (response[0] == 'q') || (response[0] == 'Q');
 
 }
+
 
 void drawMenu(int menu, std::string curDayDisplay)
 {
@@ -123,5 +131,4 @@ void drawMenu(int menu, std::string curDayDisplay)
 		<< "\t\t0 - PAST\n\n\t\t1 - FUTURE\n\n"
 		<< "\t\tENTER 0 OR 1: ";
 	}
-
 }
