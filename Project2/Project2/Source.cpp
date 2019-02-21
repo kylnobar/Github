@@ -37,10 +37,8 @@ void SieveOfEratosthenes()
 // Driver Program to test above function 
 int main()
 {
-	
-
 	cout << "Following are the prime numbers smaller "
-		<< " than or equal to " << n << endl;
+		<< " than or equal to " << 125000 << endl;
 	SieveOfEratosthenes();
 	system("pause");
 	return 0;
