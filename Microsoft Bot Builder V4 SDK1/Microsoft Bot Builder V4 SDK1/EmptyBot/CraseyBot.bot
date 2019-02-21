@@ -1,0 +1,18 @@
+{
+    "name": "Crasey",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "local",
+            "id": "50e3f720-203a-11e9-b220-f3b589c6d634",
+            "name": "local"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "Y:\\SourceCode\\Github\\Microsoft Bot Builder V4 SDK1\\Microsoft Bot Builder V4 SDK1\\EmptyBot\\CraseyBot.bot"
+}

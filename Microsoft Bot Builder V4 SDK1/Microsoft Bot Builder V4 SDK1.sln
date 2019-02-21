@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyBot", "Microsoft Bot Builder V4 SDK1\EmptyBot\EmptyBot.csproj", "{73EEAC4D-CC39-490D-90B5-873EE20605B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EchoBot", "Microsoft Bot Builder V4 SDK1\EchoBot\EchoBot.csproj", "{82BC1A48-20AF-444C-BB07-F650D3BF4FF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73EEAC4D-CC39-490D-90B5-873EE20605B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EEAC4D-CC39-490D-90B5-873EE20605B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EEAC4D-CC39-490D-90B5-873EE20605B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EEAC4D-CC39-490D-90B5-873EE20605B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82BC1A48-20AF-444C-BB07-F650D3BF4FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82BC1A48-20AF-444C-BB07-F650D3BF4FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82BC1A48-20AF-444C-BB07-F650D3BF4FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82BC1A48-20AF-444C-BB07-F650D3BF4FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBA7FF07-F374-4A17-9E86-B6A24B451051}
+	EndGlobalSection
+EndGlobal
