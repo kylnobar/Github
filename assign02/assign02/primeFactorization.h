@@ -22,7 +22,7 @@ public:
 	//first125000Primes = first 125000 prime numbers.      
 
 private:
-	long long first125000Primes[125000];
+	long long first125000Primes[125001];
 
 	void primeFact(long long num, long long list[], int length, int firstPrimeFactIndex);
 
