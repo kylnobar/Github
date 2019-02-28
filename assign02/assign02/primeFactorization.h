@@ -3,7 +3,16 @@
 #define primeFactorization_H
 
 #include "integerManipulation.h"
+/*
+	Casey Sorrells
+	CSCI 272-6422
+	Chapter 11 Assignment
 
+	Problem Statement: this program is supposed to tell us if a number is prime
+
+	First we generate the first 125000 prime numbers and save into first125000Primes[] array.
+	Then the user can enter a number and a prime factorization is calculated.
+*/
 class primeFactorization : public integerManipulation
 {
 public:

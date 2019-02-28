@@ -18,10 +18,10 @@
     <ClCompile Include="assign02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Windows Folders\Desktop\homework_csci272\assign02\integerManipulationImp.cpp">
+    <ClCompile Include="integerManipulationImp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Windows Folders\Desktop\homework_csci272\assign02\primeFactorizationImp.cpp">
+    <ClCompile Include="primeFactorizationImp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
