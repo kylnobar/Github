@@ -52,7 +52,7 @@ int arrayListType::maxListSize() const {
 
 // output list elements on screen
 void arrayListType::print() const {
-	for (int i = 0; i < length; i++) // move that pointer!
+	for (int i = 0; i < length; i++) // read data based on position in array
 		std::cout << list[i] << " "; // output data
 	std::cout << "\n"; // carriage return
 }
