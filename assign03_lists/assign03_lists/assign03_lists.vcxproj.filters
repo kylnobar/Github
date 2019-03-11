@@ -24,12 +24,18 @@
     <ClCompile Include="unorderedArrayListType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="orderedArrayListType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrayListType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="unorderedArrayListType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="orderedArrayListType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

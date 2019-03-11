@@ -14,17 +14,18 @@
 	automatically as numbers are added to it or removed from it, call that the orderedArrayListType.
 	Finally, finish learning to code and profit.
 */
-class unorderedArrayListType: public arrayListType {
-
+class orderedArrayListType :
+	public arrayListType
+{
 public:
-	// inserts an item at a specific location in the list
 	void insertAt(int location, int insertItem);
 	void insertEnd(int insertItem);
 	void replaceAt(int location, int repItem);
 	int seqSearch(int searchItem) const;
+	void insert(int insertItem);
 	void remove(int removeItem);
 
 	// Constructor
-	unorderedArrayListType(int size = 100);
+	orderedArrayListType(int size = 100);
 };
 
