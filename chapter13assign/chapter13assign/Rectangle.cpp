@@ -2,8 +2,8 @@
 #include "Rectangle.h"
 
 
-void Rectangle::setDimension(double l, double w)
-{
+void Rectangle::setDimension(double l, double w) {
+
 	if (l >= 0)
 		length = l;
 	else
@@ -16,25 +16,13 @@ void Rectangle::setDimension(double l, double w)
 
 }
 
-double Rectangle::getLength() const
-{
-	return length;
-}
+double Rectangle::getLength() const		{ return length; }
 
-double Rectangle::getWidth() const
-{
-	return width;
-}
+double Rectangle::getWidth() const		{ return width; }
 
-double Rectangle::area() const
-{
-	return length * width;
-}
+double Rectangle::area() const			{ return length * width; }
 
-double Rectangle::perimeter() const
-{
-	return 2 * (length * width);
-}
+double Rectangle::perimeter() const		{ return 2 * (length * width); }
 
 void Rectangle::print() const
 {
@@ -42,16 +30,14 @@ void Rectangle::print() const
 		<< "; Width = " << width;
 }
 
+// Constructors
 Rectangle::Rectangle()
 {
+	// Default values of length and width
 	setDimension(0, 0);
 }
 
-Rectangle::Rectangle(double l, double w)
-{
-	setDimension(l, w);
-}
+Rectangle::Rectangle(double l, double w) { setDimension(l, w); }
 
-Rectangle::~Rectangle()
-{
-}
+// Destructor
+Rectangle::~Rectangle() {}

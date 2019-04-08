@@ -1,12 +1,29 @@
+#include <iostream>
 #include "Box.h"
 
 
+void Box::setDimention(double h, double w, double l) {
 
-Box::Box()
-{
+	Rectangle::setDimension(l, w);
+
+	if (h >= 0)
+		height = h;
+	else
+		height = 0;
 }
 
+double Box::getHeight() const {}
 
-Box::~Box()
-{
+double Box::area() const {}
+
+double Box::volume() const {}
+
+void Box::print() const {
+
+	Rectangle::print();
+	std::cout << "; Height = " << height;
 }
+
+Box::Box() {}
+
+Box::~Box() {}

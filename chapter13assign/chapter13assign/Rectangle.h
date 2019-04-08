@@ -18,7 +18,7 @@ public:
 // Constructors:
 
 	Rectangle();
-	Rectangle(double length, double width);
+	Rectangle(double l, double w);
 
 // Destructor:
 	~Rectangle();

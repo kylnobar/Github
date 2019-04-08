@@ -10,8 +10,11 @@ public:
 	double volume() const;
 	void print() const;
 
+	// Constructors
 	Box();
 	Box(double hight, double width, double length);
+
+	// Destructor
 	~Box();
 };
 
