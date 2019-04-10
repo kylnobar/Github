@@ -122,6 +122,9 @@
     <ClCompile Include="Box.cpp" />
     <ClCompile Include="Rectangle.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Instructions.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

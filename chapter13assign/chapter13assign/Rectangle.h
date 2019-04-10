@@ -1,10 +1,12 @@
 #pragma once
+#include "Box.h"
+
 class Rectangle
 {
+public:
 	double length;
 	double width;
 
-public:
 	void setDimension(double length, double width);
 
 	double getLength() const;

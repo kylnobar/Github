@@ -1,0 +1,18 @@
+/*
+
+PART A:
+add the functions to overload the operators +, -, *, ==, !=, <=, <, >=, >, and pre- and post-increment and decrement operators
+as members of the class boxtype. also overload the operators << and >>.
+
+Overload the relational operators by considering the 
+volume of the boxes. 
+
+for example: two boxes are the same if they have the same volume.
+
+PART B:
+Write the definitions of the functions of the class boxtype as defined in PART A.
+
+PART C:
+Write a test program that tests varioous operations on the class rectangleType
+
+*/
